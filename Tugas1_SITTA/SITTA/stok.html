@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SITTA - Stok Bahan Ajar</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="brand"><img src="img/logo-ut.png" alt="Logo Universitas Terbuka" class="logo-ut"><div><h1>SITTA</h1><p>Sistem Informasi Pemesanan dan Distribusi Bahan Ajar</p></div></div>
+    </header>
+
+        <nav aria-label="Navigasi utama">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="stok.html">Stok Bahan Ajar</a>
+        <a href="tracking.html">Tracking</a>
+        <a href="laporan.html">Laporan</a>
+        <a href="histori.html">Histori Transaksi</a>
+        <a href="index.html">Logout</a>
+    </nav>
+
+    <main>
+
+        <section>
+
+            <h2>Informasi Stok Bahan Ajar</h2>
+
+            <p>
+                Daftar bahan ajar dan jumlah stok yang tersedia.
+            </p>
+
+            <button id="btnTambahStok" class="btn">
+                + Tambah Stok
+            </button>
+
+            <div id="formStok" class="form-stok">
+
+    <div class="form-group">
+        <label for="kodeStok">Kode</label>
+        <input type="text" id="kodeStok" placeholder="Contoh: BA005">
+    </div>
+
+    <div class="form-group">
+        <label for="namaStok">Nama Bahan Ajar</label>
+        <input type="text" id="namaStok" placeholder="Nama bahan ajar">
+    </div>
+
+    <div class="form-group">
+        <label for="jenisStok">Jenis</label>
+        <input type="text" id="jenisStok" placeholder="Contoh: Modul">
+    </div>
+
+    <div class="form-group">
+        <label for="jumlahStok">Jumlah Stok</label>
+        <input type="number" id="jumlahStok" min="1" placeholder="Jumlah stok">
+    </div>
+
+    <button id="btnSimpanStok" class="btn">
+        Simpan
+    </button>
+
+</div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Cover</th>
+                            <th>Kode</th>
+                            <th>Nama Bahan Ajar</th>
+                            <th>Jenis</th>
+                            <th>Stok</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabelStok">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            © 2026 SITTA
+        </p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

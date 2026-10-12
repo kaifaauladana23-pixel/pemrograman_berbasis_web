@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITTA - Laporan</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="brand"><img src="img/logo-ut.png" alt="Logo Universitas Terbuka" class="logo-ut"><div><h1>SITTA</h1><p>Sistem Informasi Pemesanan dan Distribusi Bahan Ajar</p></div></div>
+    </header>
+
+        <nav aria-label="Navigasi utama">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="stok.html">Stok Bahan Ajar</a>
+        <a href="tracking.html">Tracking</a>
+        <a href="laporan.html">Laporan</a>
+        <a href="histori.html">Histori Transaksi</a>
+        <a href="index.html">Logout</a>
+    </nav>
+
+    <main>
+
+        <section>
+            <h2>📊 Monitoring Progress DO</h2>
+            <p>Monitoring status Delivery Order bahan ajar.</p>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nomor DO</th>
+                            <th>Mahasiswa</th>
+                            <th>Status</th>
+                            <th>Progress</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabelProgressDO">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+
+        <section>
+            <h2>📚 Rekap Bahan Ajar</h2>
+            <p>Rekap data bahan ajar yang tersedia.</p>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Kode</th>
+                            <th>Nama Bahan Ajar</th>
+                            <th>Jenis</th>
+                            <th>Jumlah Stok</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tabelRekapBahan">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 SITTA</p>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

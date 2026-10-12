@@ -1,0 +1,132 @@
+
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SITTA - Login</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <main class="login-container">
+
+        <section class="login-box">
+
+            <img src="img/logo-ut.png" alt="Logo Universitas Terbuka" class="logo-ut login-logo">
+            <h1>SITTA</h1>
+
+            <p>
+                Sistem Informasi Pemesanan dan Distribusi Bahan Ajar
+            </p>
+
+            <h2>Login</h2>
+
+            <form id="formLogin">
+
+                <div class="form-group">
+
+                    <label for="email">Email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        required
+                        placeholder="Masukkan email"
+                    >
+
+                </div>
+
+                <div class="form-group">
+
+                    <label for="password">Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        required
+                        placeholder="Masukkan password"
+                    >
+
+                </div>
+
+                <button type="submit" class="btn">
+                    Login
+                </button>
+
+            </form>
+
+            <div class="login-link">
+
+                <button type="button" id="btnLupa">
+                    Lupa Password
+                </button>
+
+                <button type="button" id="btnDaftar">
+                    Daftar
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <div id="modalLupa" class="modal">
+    <div class="modal-content">
+        <span id="tutupLupa" class="close">&times;</span>
+
+        <h2>Lupa Password</h2>
+        <p>Masukkan email untuk mendapatkan instruksi reset password.</p>
+
+        <div class="form-group">
+            <label for="emailLupa">Email</label>
+            <input type="email" id="emailLupa" placeholder="Masukkan email">
+        </div>
+
+        <button type="button" id="btnKirimLupa" class="btn">
+            Kirim
+        </button>
+    </div>
+</div>
+
+
+<div id="modalDaftar" class="modal">
+    <div class="modal-content">
+        <span id="tutupDaftar" class="close">&times;</span>
+
+        <h2>Daftar Akun</h2>
+        <p>Silakan isi data berikut untuk membuat akun.</p>
+
+        <div class="form-group">
+            <label for="namaDaftar">Nama</label>
+            <input type="text" id="namaDaftar" placeholder="Masukkan nama">
+        </div>
+
+        <div class="form-group">
+            <label for="emailDaftar">Email</label>
+            <input type="email" id="emailDaftar" placeholder="Masukkan email">
+        </div>
+
+        <div class="form-group">
+            <label for="passwordDaftar">Password</label>
+            <input type="password" id="passwordDaftar" placeholder="Masukkan password">
+        </div>
+
+        <button type="button" id="btnDaftarAkun" class="btn">
+            Daftar
+        </button>
+    </div>
+</div>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
